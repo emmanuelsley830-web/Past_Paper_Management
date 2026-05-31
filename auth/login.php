@@ -6,9 +6,11 @@ if (current_user()) {
 $pageTitle = 'Login';
 include BASE_PATH . '/includes/header.php';
 ?>
-<div class="login-box">
-  <div class="card content-card">
+<div class="auth-shell">
+<div class="login-box premium-auth-box">
+  <div class="card content-card auth-card">
     <div class="card-header text-center py-4">
+      <div class="auth-mark"><i class="fa-solid fa-building-columns"></i></div>
       <h1 class="h4 mb-0 fw-bold"><?= e(APP_NAME) ?></h1>
       <p class="text-muted mb-0">Central academic paper archive</p>
     </div>
@@ -34,5 +36,6 @@ include BASE_PATH . '/includes/header.php';
       </div>
     </form>
   </div>
+</div>
 </div>
 <?php include BASE_PATH . '/includes/footer.php'; ?>

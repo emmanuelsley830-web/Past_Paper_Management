@@ -7,9 +7,11 @@ $pageTitle = 'Student Registration';
 $courses = courses();
 include BASE_PATH . '/includes/header.php';
 ?>
-<div class="login-box">
-  <div class="card content-card">
+<div class="auth-shell">
+<div class="login-box premium-auth-box">
+  <div class="card content-card auth-card">
     <div class="card-header text-center py-4">
+      <div class="auth-mark"><i class="fa-solid fa-user-graduate"></i></div>
       <h1 class="h4 mb-0 fw-bold">Student Registration</h1>
       <p class="text-muted mb-0">Create your paper archive account</p>
     </div>
@@ -25,5 +27,6 @@ include BASE_PATH . '/includes/header.php';
       <div class="text-center mt-3"><a href="<?= asset_url('auth/login.php') ?>">Back to login</a></div>
     </form>
   </div>
+</div>
 </div>
 <?php include BASE_PATH . '/includes/footer.php'; ?>
